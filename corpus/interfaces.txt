@@ -229,6 +229,7 @@ interface A {
     (declaration_list
       (indexer_declaration
         (predefined_type)
+        (this)
         (bracketed_parameter_list (parameter (predefined_type) (identifier)))
         (accessor_list
           (accessor_declaration)

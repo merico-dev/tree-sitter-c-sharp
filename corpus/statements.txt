@@ -181,7 +181,7 @@ class A {
       (identifier)
       (parameter_list)
       (block
-        (goto_statement (label_name))
+        (goto_statement (identifier))
         (labeled_statement
           (label_name) (return_statement)))))))
 
@@ -269,13 +269,12 @@ class A {
           value: (identifier)
           body: (switch_body
             (switch_section
-              (case_switch_label (integer_literal))
-              (case_switch_label (integer_literal))
-              (return_statement (integer_literal)))
+              label: (case_switch_label (integer_literal))
+              label: (case_switch_label (integer_literal))
+              body: (return_statement (integer_literal)))
             (switch_section
-              (default_switch_label)
-              (block
-                (return_statement (integer_literal)))))))))))
+              label: (default_switch_label)
+              body: (block (return_statement (integer_literal)))))))))))
 
 =====================================
 Declared tuple type with default
@@ -405,11 +404,11 @@ class A {
           value: (tuple_expression (argument (identifier)) (argument (identifier)))
           body: (switch_body
             (switch_section
-              (case_switch_label (tuple_expression (argument (integer_literal)) (argument (integer_literal))))
-              (return_statement (integer_literal)))
+              label: (case_switch_label (tuple_expression (argument (integer_literal)) (argument (integer_literal))))
+              body: (return_statement (integer_literal)))
             (switch_section
-              (default_switch_label)
-              (return_statement (integer_literal))))))))))
+              label: (default_switch_label)
+              body: (return_statement (integer_literal))))))))))
 
 
 =====================================

@@ -424,6 +424,7 @@ class Foo {
       (indexer_declaration
         (modifier)
         (predefined_type)
+        (this)
         (bracketed_parameter_list (parameter (predefined_type) (identifier)))
         (accessor_list
           (accessor_declaration
@@ -448,6 +449,7 @@ class Foo {
       (indexer_declaration
         (modifier)
         (predefined_type)
+        (this)
         (bracketed_parameter_list (parameter (predefined_type) (identifier)))
         (arrow_expression_clause
           (element_access_expression (identifier)
@@ -474,6 +476,7 @@ class Foo {
       (indexer_declaration
         (modifier)
         (predefined_type)
+        (this)
         (bracketed_parameter_list (parameter (predefined_type) (identifier)))
         (accessor_list
           (accessor_declaration
