@@ -6,12 +6,15 @@ int x = y;
 
 ---
 
-(compilation_unit
-  (global_statement
-    (local_declaration_statement
-      (variable_declaration
-        (predefined_type)
-        (variable_declarator (identifier) (equals_value_clause (identifier)))))))
+(compilation_unit 
+  (global_statement 
+    (local_declaration_statement 
+      variable_declaration: (variable_declaration 
+        type: (predefined_type )
+        (variable_declarator 
+          identifier: (identifier )
+          value: (equals_value_clause 
+            (identifier )))))))
 
 =======================================
 indentifiers with keyword names
@@ -21,12 +24,15 @@ int @var = @const;
 
 ---
 
-(compilation_unit
-  (global_statement
-    (local_declaration_statement
-      (variable_declaration
-        (predefined_type)
-        (variable_declarator (identifier) (equals_value_clause (identifier)))))))
+(compilation_unit 
+  (global_statement 
+    (local_declaration_statement 
+      variable_declaration: (variable_declaration 
+        type: (predefined_type )
+        (variable_declarator 
+          identifier: (identifier )
+          value: (equals_value_clause 
+            (identifier )))))))
 
 =======================================
 indentifiers with contextual keyword names
@@ -37,14 +43,20 @@ int nuint = 0;
 
 ---
 
-(compilation_unit
-  (global_statement
-    (local_declaration_statement
-      (variable_declaration
-        (predefined_type)
-        (variable_declarator (identifier) (equals_value_clause (integer_literal))))))
-  (global_statement
-    (local_declaration_statement
-      (variable_declaration
-        (predefined_type)
-        (variable_declarator (identifier) (equals_value_clause (integer_literal)))))))
+(compilation_unit 
+  (global_statement 
+    (local_declaration_statement 
+      variable_declaration: (variable_declaration 
+        type: (predefined_type )
+        (variable_declarator 
+          identifier: (identifier )
+          value: (equals_value_clause 
+            (integer_literal ))))))
+  (global_statement 
+    (local_declaration_statement 
+      variable_declaration: (variable_declaration 
+        type: (predefined_type )
+        (variable_declarator 
+          identifier: (identifier )
+          value: (equals_value_clause 
+            (integer_literal )))))))
