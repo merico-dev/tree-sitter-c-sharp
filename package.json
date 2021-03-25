@@ -2,7 +2,7 @@
   "name": "tree-sitter-c-sharp",
   "version": "0.16.1",
   "description": "C# grammar for tree-sitter",
-  "main": "index.js",
+  "main": "bindings/node",
   "keywords": [
     "parser",
     "lexer"
@@ -13,7 +13,7 @@
     "nan": "^2.12.0"
   },
   "devDependencies": {
-    "tree-sitter-cli": "^0.17.1"
+    "tree-sitter-cli": "^0.19.4"
   },
   "scripts": {
     "test": "tree-sitter test && node test.js"
